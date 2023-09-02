@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "File Copy (Option 1)",
+    "Description": "Copies a file from one location to another",
+    "Parameter": "Source File , Destination File"
+  },
+  {
+    "Name": "File Delete (Option 2)",
+    "Description": "Deletes a file from a given location",
+    "Parameter": "File Path"
+  },
+  {
+    "Name": "Query Folder Files (Option 3)",
+    "Description": "Print to console list of all files in folders ",
+    "Parameter": "Folder Path"
+  },
+  {
+    "Name": "Create Folder (Option 4)",
+    "Description": "Creates a new folder at specified folder path",
+    "Parameter": "Folder Path, New Folder Name"
+  },
+  {
+    "Name": "Download File (Option 5)",
+    "Description": "Downloads a file from a given URL",
+    "Parameter": "Source URL, Output File"
+  },
+  {
+    "Name": "Wait (Option 6)",
+    "Description": "Pauses the execution for a specified amount of time",
+    "Parameter": "Seconds"
+  },
+  {
+    "Name": "Conditional Count Rows File (Option 7)",
+    "Description": "Count of rows in the file that contain the search string",
+    "Parameter": "Source File, String to search in rows"
+  }
+]
