@@ -10,21 +10,21 @@ namespace AutomationPipeline.Helper.Interfaces
         /// </summary>
         /// <param name="sourceFile"></param>
         /// <param name="destinationFile"></param>
-        bool CopyOperation(string sourceFile, string destinationFile);
+        Result<bool> CopyOperation(string sourceFile, string destinationFile);
 
         /// <summary>
         /// Deletes a file
         /// </summary>
         /// <param name="filePath"></param>
         /// <returns></returns>
-        bool DeleteOperation(string filePath);
+        Result<bool> DeleteOperation(string filePath);
 
         /// <summary>
         /// Queries files in a folder
         /// </summary>
         /// <param name="folderPath"></param>
         /// <returns></returns>
-        string[] QueryFolderFilesOperation(string folderPath);
+        Result<string[]> QueryFolderFilesOperation(string folderPath);
 
         /// <summary>
         /// Create a new folder
@@ -32,7 +32,7 @@ namespace AutomationPipeline.Helper.Interfaces
         /// <param name="parentFolderPath"></param>
         /// <param name="newFolderName"></param>
         /// <returns></returns>
-        bool CreateFolderOperation(string parentFolderPath, string newFolderName);
+        Result<bool> CreateFolderOperation(string parentFolderPath, string newFolderName);
 
         /// <summary>
         /// Downlaod a file from source url
@@ -40,14 +40,14 @@ namespace AutomationPipeline.Helper.Interfaces
         /// <param name="sourceUrl"></param>
         /// <param name="outputFile"></param>
         /// <returns></returns>
-        bool DownloadFileOperation(string sourceUrl, string outputFile);
+        Result<bool> DownloadFileOperation(string sourceUrl, string outputFile);
 
         /// <summary>
         /// Waits for specified seconds
         /// </summary>
         /// <param name="seconds"></param>
         /// <returns></returns>
-        bool WaitOperation(int seconds);
+        Result<bool> WaitOperation(int seconds);
 
         /// <summary>
         /// Counts total rows in a file that contains specified string
@@ -55,6 +55,10 @@ namespace AutomationPipeline.Helper.Interfaces
         /// <param name="sourceFile"></param>
         /// <param name="searchString"></param>
         /// <returns></returns>
-        int CountRowsContainingStringOperation(string sourceFile, string searchString);
+        Result<int> CountRowsContainingStringOperation(string sourceFile, string searchString);
+
+        Result<bool> MoveOperation(string sourceFile, string destinationFile);
+        Result<bool> WriteTextToFileOperation(string filePath, string content);
+        Result<string> ReadTextFromFileOperation(string filePath); // Returns content or error
     }
 }

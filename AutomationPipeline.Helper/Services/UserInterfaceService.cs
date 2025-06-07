@@ -69,5 +69,32 @@ namespace AutomationPipeline.Helper.Services
             Console.WriteLine("-----------------------");
             Console.WriteLine();
         }
+
+        public void DisplayMoveFileOperation()
+        {
+            Console.Clear();
+            Console.WriteLine("----------------------");
+            Console.WriteLine("| Move File Operation |");
+            Console.WriteLine("----------------------");
+            Console.WriteLine();
+        }
+
+        public void DisplayWriteTextToFileOperation()
+        {
+            Console.Clear();
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("| Write Text to File Operation |");
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine();
+        }
+
+        public void DisplayReadTextFromFileOperation()
+        {
+            Console.Clear();
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine("| Read Text from File Operation |");
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine();
+        }
     }
 }

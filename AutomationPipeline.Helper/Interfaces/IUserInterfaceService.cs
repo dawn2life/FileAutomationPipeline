@@ -39,5 +39,20 @@ namespace AutomationPipeline.Helper.Interfaces
         /// User interface for counting rows in a file
         /// </summary>
         void DisplayCountingRowsOperation();
+
+        /// <summary>
+        /// User interface for moving a file
+        /// </summary>
+        void DisplayMoveFileOperation();
+
+        /// <summary>
+        /// User interface for writing text to a file
+        /// </summary>
+        void DisplayWriteTextToFileOperation();
+
+        /// <summary>
+        /// User interface for reading text from a file
+        /// </summary>
+        void DisplayReadTextFromFileOperation();
     }
 }
