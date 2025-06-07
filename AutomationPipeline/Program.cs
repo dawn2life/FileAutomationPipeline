@@ -20,11 +20,19 @@ using var scope = host.Services.CreateScope();
 
 var services  = scope.ServiceProvider;
 
-try 
+try
 {
-    services.GetRequiredService<App>().Run();
-} 
-catch (Exception ex) 
-{ 
-    Console.WriteLine(ex.Message);
+    var app = services.GetRequiredService<App>();
+    if (args.Length > 0)
+    {
+        app.RunFromArguments(args);
+    }
+    else
+    {
+        app.Run();
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"An unexpected error occurred: {ex.Message}");
 }

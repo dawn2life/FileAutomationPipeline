@@ -33,5 +33,20 @@
     "Name": "Conditional Count Rows File (Option 7)",
     "Description": "Count of rows in the file that contain the search string",
     "Parameter": "Source File, String to search in rows"
+  },
+  {
+    "Name": "Move File (Option 8)",
+    "Description": "Moves a file from a source to a destination path.",
+    "Parameter": "Source File, Destination File"
+  },
+  {
+    "Name": "Write Text to File (Option 9)",
+    "Description": "Writes provided text content to a specified file.",
+    "Parameter": "File Path, Text Content"
+  },
+  {
+    "Name": "Read Text from File (Option 10)",
+    "Description": "Reads and displays the content of a text file.",
+    "Parameter": "File Path"
   }
 ]
